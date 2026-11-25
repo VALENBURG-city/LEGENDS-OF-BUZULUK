@@ -1,0 +1,79 @@
+
+nav ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    position: absolute;
+    bottom: 0vh;
+    right: -1vw;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    width: 500px;
+    height: 450px;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.shadow_back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -20vh;
+    right: -3vw;
+    z-index: -1;
+    transform: scale(110%);
+}
+
+
+.BUTTONMENU{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "TIMES";
+    width: 388px;
+    height:80px;
+    color: var(--YELLOW);
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 2px;
+}
+
+    .BUTTONMENU:hover{
+        transform: scale(1.03);
+        text-shadow: var(--YELLOW) 0 0 10px;
+    }
+
+
+#id1{
+    background-image: url(/TEXTURES/button_mainmenu.png);
+}
+
+#id2{
+    background-image: url(/TEXTURES/button_mainmenu2.png);
+}
+
+#id3{
+    background-image: url(/TEXTURES/button_mainmenu3.png);
+}
+
+#id4{
+    background-image: url(/TEXTURES/button_mainmenu4.png);
+}
+
+

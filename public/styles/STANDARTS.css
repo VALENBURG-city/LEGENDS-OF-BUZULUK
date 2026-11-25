@@ -1,0 +1,207 @@
+:root{
+    --YELLOW: #e0a800;
+}
+
+
+@font-face {
+    font-family: "TIMES";
+    src: url(/styles/TIMES.TTF);
+}
+
+body{
+    background-color: black;
+    background-image: url(/TEXTURES/background.png);
+    background-size:cover;
+    background-repeat: no-repeat; 
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+nav ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    position: absolute;
+    bottom: 0vh;
+    right: -1vw;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    width: 500px;
+    height: 450px;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.shadow_back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -20vh;
+    right: -3vw;
+    z-index: -1;
+    transform: scale(110%);
+}
+
+/* nav ul li a {
+    text-decoration: none;
+    outline: none;
+} */
+
+.BUTTONMENU{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "TIMES";
+    width: 388px;
+    height:80px;
+    color: var(--YELLOW);
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 2px;
+}
+
+    .BUTTONMENU:hover{
+        transform: scale(1.03);
+        text-shadow: #ffd863 0 0 10px;
+        color:#ffd863;
+    }
+
+    .ACTIVE{
+        text-shadow: #ffd863 0 0 10px;
+        color: #ffd863;
+        transform: scale(1.03);
+    }
+
+
+#id1{
+    background-image: url(/TEXTURES/button_mainmenu.png);
+}
+
+#id2{
+    background-image: url(/TEXTURES/button_mainmenu2.png);
+}
+
+#id3{
+    background-image: url(/TEXTURES/button_mainmenu3.png);
+}
+
+#id4{
+    background-image: url(/TEXTURES/button_mainmenu4.png);
+}
+
+
+
+
+
+.MUSIC_PLAYER{
+    display:flex;
+    position: absolute;
+    justify-content: end;
+    align-items: start;
+    width: 350px;
+    height: 200px;
+    bottom: 1vh;
+    left: 2vw;
+    background-image: url(/TEXTURES/MUSIC_PLAYER2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.song_photo{
+    display: flex;
+    width: 99px;
+    height: 95px;
+    margin-right: 4px;
+    margin-top: 31px;
+    z-index: -1;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 100px;
+    margin-top: 26px;
+    margin-right: 20px ;
+    gap: 5px;
+}
+
+.PLAYER_BUTTON{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.player_button{
+    display: flex;
+    cursor: pointer;
+}
+
+    .player_button:active{
+        transform: scale(105%);
+    }
+
+#play{
+    width: 35px;
+    height: 30px;
+    background-image: url(/TEXTURES/PLAY_button.png);
+    background-size: 106%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 50px;
+}
+
+#back, #next{
+    display: flex;
+    width: 30px;
+    height: 15px;
+    background-image: url(/TEXTURES/BACK_button.png);
+    background-size: 107%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: black solid 1px;
+    border-radius: 1px;
+    background-color: black;
+    filter: brightness(90%);
+}
+
+#next{
+    background-image: url(/TEXTURES/NEXT_button.png);
+    filter: brightness(90%);
+}
+
+.name, .artist{
+    color: var(--YELLOW);
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-family: "TIMES";
+}
+
+    .artist{
+        font-size: 0.7rem;
+    }
+
